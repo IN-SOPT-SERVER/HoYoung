@@ -10,6 +10,8 @@ app.use("/api", require("./api")); // use -> 모든 요청
 // localhost:8000/api -> api 폴더
 // localhost:8000/api/user -> user.ts
 
+require("dotenv").config(); // .env file 가져오기
+
 //* HTTP method - GET
 app.get("/", (req: Request, res: Response, next: NextFunction) => {
   res.send("마! 이게 서버다!");

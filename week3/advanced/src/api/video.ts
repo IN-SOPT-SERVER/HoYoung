@@ -12,9 +12,9 @@ router.get("/:movieId", (req: Request, res: Response) => {
     message: "영화 조회 성공",
     data: {
       _id: movieId,
-      thumbnail: "<url>",
-      titleImage: "<url>",
-      videoUrl: "<url>",
+      thumbnail: `${process.env.S3_BASE_URL}/aws+%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.png`,
+      titleImage: `${process.env.S3_BASE_URL}/aws+%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.png`,
+      videoUrl: `${process.env.S3_BASE_URL}/aws+%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.png`,
       movieInfo: {
         title: "수리남",
         isOriginal: true,
